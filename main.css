@@ -4,8 +4,9 @@
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
-     font-family: 'Gentium Book Basic', serif;
+   font-family: 'Raleway', sans-serif;
     color:white;
+    
    
 }
 html{
@@ -50,12 +51,13 @@ img{
 	margin-bottom: 10rem;
 }
 .section-heading h1{
-	font-size: 3.5rem;
-	color:rgba(255,255,255,0.3);
+	font-size: 3.5vw;
+	color:rgba(255,255,255);
 	text-transform: uppercase;
-	font-weight: 300;
+	font-weight: bold;
 	position:relative;
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
+    letter-spacing: 4px;
 }
 .section-heading h1::before,
 .section-heading h1::after{
@@ -67,10 +69,12 @@ img{
 	background-color:rgba(255,255,255,0.75);
 }
 .section-heading h1::before{
-
+    
+    margin-top:2rem;
 	width: 10rem;
 	height:3px;
 	border-radius:0.8rem;
+    text-transform: uppercase;
 }
 .section-heading h1::after{
 
@@ -81,7 +85,9 @@ img{
 }
 .section-heading h6{
 	font-size: 1.65rem;
-	font-weight: 300;
+	font-weight: 700;
+    letter-spacing: 2px;
+    
 
 
 	
@@ -93,17 +99,18 @@ img{
 
 /*Start header*/
 
-header{
+.navbar-inverse{
+margin-bottom: 0px !important;
+}
+.home{
+    margin-top: 0;
     background:url(images/bg1.jpg);
     background-repeat: no-repeat;
-    height:1000px;
+    height:800px;
     background-size: 100% 100%;
     background-attachment: fixed;
 	position: relative;
-    
-    
 }
-
 .ml3 {
   
     position:absolute;
@@ -115,7 +122,7 @@ header{
 	z-index:1;
     letter-spacing: 2px;
     font-weight: 900;
-    font-size: 8rem;
+    font-size: 6vw;
     
     padding:1rem;
     user-select: none;
@@ -156,46 +163,48 @@ header{
     background-size: 100% 100%;
     background-attachment: fixed;
 	width:100%;
-	height:100vh;
+	height:120vh;
     
 }
+
+
+
 .about .container{
   padding-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.about-details .p{
-  justify-content: center;
-  align-items: center;
-  display: contents;
-  margin: 2px;
+div.profile-img{
+    max-width: 30vw;
+    max-height: 50vw;
+    margin-bottom: 25px;
+    margin-right: 40px;
 }
-.about-heading{
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 0;
-  margin-bottom: 6rem;
 
-}
-.about-heading h1{
-  font-size: 10rem;
-  opacity: .3;
-}
-.about-heading h6{
-
-  font-size: 2rem;
-  font-weight: 300;
-}
-.profile-img{
-  flex: 1;
-  margin-right: 2rem;
-}
 .profile-img img{
-    max-width:70%;
-    max-height: 70%;
+   max-width: 30vw;
+   max-height:50vw;
+   margin-right:20px;
     
 }
+.about-details p{
+    font-weight:300;
+    justify-content: center;
+    align-items: center;
+    display: contents;
+    margin: 2px;
+    font-size:1.5vw;
+}
+.about-heading{
+    font-size:2vw;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 0;
+    margin-bottom: 6vw;
+
+}
+
 .about-details{
   flex: 1;
 }
@@ -204,12 +213,12 @@ header{
   
 }
 .social-media i{
+    
+
   font-size: 5rem;
   transition: color 650ms;
 }
-.icon-link:hover{
-  color:#000000;
-}
+
 /*End about*/
 
 
@@ -219,27 +228,19 @@ header{
 	flex:1;
 }
 
-.social-media{
-	margin-top: 5rem;
-}
 .social-media i{
-	font-size: 5rem;
-	transition: color 650ms;
+    font-size: 5vh;
+    transition: color 650ms;
 }
-.fa-facebook-square:hover{
-	color:#4267b2;
-}
-.fa-twitter-square:hover{
-	color:#38a1f3;
-}
-.fa-github-square:hover{
-	color:#000000;
+
+.fab:hover{
+    color:black;
 }
 /*End about*/
 .services{
-       background:url(images/bg3.jpg);
+    background:url(images/bg3.jpg);
     background-repeat: no-repeat;
-    height:1000px;
+    height:120vh;
     background-size: 100% 100%;
     background-attachment: fixed;
 	position: relative;
@@ -247,10 +248,10 @@ header{
 }
 /*Start services*/
 .my-skills{
-	margin-top:10rem;
+	margin-top:8rem;
 	display:grid;
 	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-	grid-gap:2.5rem;
+	grid-gap:2rem;
 	text-align: center;
 }
 .skill{
@@ -262,13 +263,20 @@ header{
 	padding:2rem;
 }
 .skill h1{
+    font-size:2vw;
+    font-weight:bold;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	margin:1rem -2px 1rem 0;
 }
+
+.skill p{
+    margin-top: 2vh;
+    font-size:1.2vw;
+}
 .icon-container{
-	width:5rem;
-	height:5rem;
+	width:5vw;
+	height:5vw;
 	
 	background-color: #ffffff;
 	margin-bottom: 2rem;
@@ -277,9 +285,14 @@ header{
 }
 .icon-container i{
 	color:#000000;
-	font-size: 2rem;
+	font-size: 2vh;
 	margin:auto;
 	transform:rotate(-45deg);
+}
+
+.services i{
+    font-size:2vw;
+    
 }
 
 /*End services*/
@@ -361,16 +374,19 @@ header{
 	padding:5rem;
 	list-style: none;
 	text-align: left;
-	width:70%;
+    width:70%;
+    
+
+    
 
 }
 
 .timeline h1{
-	font-size:2rem;
+	font-size:3rem;
 	text-transform: uppercase;
 	font-weight: 300;
 	margin-bottom: 1rem;
-	opacity:.3;
+	
 }
 
 .timeline .date{
@@ -385,6 +401,7 @@ header{
 	padding-bottom: 0;
 	margin-bottom: 0;
 	border:none;
+     
 }
 .timeline .date::before,
 .timeline .date::after{
@@ -394,10 +411,12 @@ header{
 	transform:translateY(-50%);
 
 }
-
+.timeline .date p{
+    font-size:1.2vw;
+}
 .timeline .date::before{
 	content: attr(data-date);
-	left:-22rem;
+	left:-24rem;
 	text-align: right;
 	min-width: 12rem;
 	font-size:1.5rem;
@@ -407,7 +426,7 @@ header{
 	content:'';
 	box-shadow:0 0 0 4px #ffffff;
 	border-radius:100%;
-	left:-8rem;
+	left:-6rem;
 	height:1.5rem;
 	width:1.5rem;
 	background-color: #313534;
@@ -527,10 +546,17 @@ input[type="submit"]:hover{
 
 /*Start media queries*/
 
-@media screen and (max-width:768px){
- 
+
+
+@media screen and (max-width: 768px){
+    
+    
     .landing-text h1{
         font-size: 15rem;
+    }
+    .social-media i{
+        font-size: 3.5vw;
+        transition: color 650ms;
     }
     .landing-text h6{
         font-size: 1.7rem;
@@ -541,51 +567,73 @@ input[type="submit"]:hover{
     li{
         margin: 2rem 0;
     }
-    .nav-link{
-        font-size: 4.5rem;
-    }
     .about-heading h1{
-        font-size: 8rem;
+        font-size: 7vw;
+        font-weight:bold;
     }
+    .about-details p{
+        font-size:3vw;
+        font-weight:500;
+    }
+    .skill h1{
+        font-size:3vw;
+        font-weight:bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin:1rem -2px 1rem 0;
+    }
+    .skill p{
+        font-size:2.5vw;
+    }
+    .my-skills{
+        margin-top:4rem;
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        grid-gap:1rem;
+        text-align: center;
+    }
+
+
     .section-heading h1{
         font-size: 3rem;
     }
     .about-details .nav-list{
-        flex-direction: initial;    
+        flex-direction: initial;
     }
+
     .about-details li{
         margin: 0 2rem;
     }
+
     .icon-container{
-        width: 7rem;
-        height: 7rem;
+        width: 5vh;
+        height: 5vh;
     }
     .icon-container i{
         font-size: 4rem;
     }
     .timeline ul{
-        margin: 0 0 0 12rem;
+        margin: 0 0 0 auto;
     }
     .timeline .date::before{
-        left: -19.5rem;
+        left: -20rem;
     }
     .timeline .date::after{
         left: -5.9rem;
     }
-}
-@media screen and (max-width: 600px){
-    .menu-toggler{
-        top: 2rem;
-        right: 2rem;
+    .timeline .date p{
+    font-size:3vw;
     }
+}
+
+
+@media screen and (max-width: 600px){
+
     .landing-text h1{
         font-size: 8rem;
     }
     .landing-text h6{
         font-size: 1.4rem;
-    }
-    .nav-link{
-        font-size: 3.5rem;
     }
     .about .container{
         flex-direction: column;
@@ -593,32 +641,18 @@ input[type="submit"]:hover{
     .profile-img{
         margin: 0 0 7rem 0;
     }
-    .portfolio-item{
-        flex-direction: column;
-    }
-    .profile-img{
-        margin: 0 0 2rem 0;
-        order: 1;
-    }
-    .portfolio-description{
-        margin: 0;
-        order: 2;
-    }
+
     .timeline p{
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
     .timeline .date::before{
-        font-size: 1.2rem;
-    }
-    form{
-        width: 100%;
+        font-size: 1.4rem;
     }
     .up{
         right: 2rem;
     }
 }
-
-
+/*End media queries*/
 
 
 
