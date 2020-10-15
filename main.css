@@ -101,6 +101,10 @@ img{
 
 .navbar-inverse{
 margin-bottom: 0px !important;
+
+}
+.navbar-inverse a{
+    font-weight: 900 !important;
 }
 .home{
     margin-top: 0;
@@ -189,12 +193,14 @@ div.profile-img{
     
 }
 .about-details p{
-    font-weight:300;
+    font-weight:500;
     justify-content: center;
     align-items: center;
     display: contents;
     margin: 2px;
     font-size:1.5vw;
+    background-color:rgb(255, 0, 0);
+    
 }
 .about-heading{
     font-size:2vw;
@@ -202,6 +208,7 @@ div.profile-img{
     text-transform: uppercase;
     line-height: 0;
     margin-bottom: 6vw;
+    
 
 }
 
