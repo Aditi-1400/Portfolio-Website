@@ -136,3 +136,58 @@ text-shadow: 0px -1px #333;
     text-decoration: none;
     color:inherit;
 }
+
+
+.copyright{
+    width:100%;
+    text-align:center;
+    
+    padding:2rem 0;
+    position: relative;
+       background:url(images/bg1.jpg);
+    background-repeat: no-repeat;
+    height:50px;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    position: relative;
+    
+}
+.up{
+    position:absolute;
+    width:5rem;
+    height:5rem;
+    background-color: #eee;
+    top:-2.5rem;
+    border-radius:100%;
+    display: flex;
+    animation: pulse 2s infinite;
+    cursor:pointer;
+}
+
+.up i{
+
+    color:#16162d;
+    font-size: 2rem;
+    margin:auto;
+}
+
+.copyright p{
+    font-size: 1.4rem;
+}
+
+
+/*End footer*/
+
+/*Start animations*/
+
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0 rgba(255,255,255, 0.99);
+    }
+    70%{
+        box-shadow: 0 0 0 2rem rgba(255, 255, 255, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
