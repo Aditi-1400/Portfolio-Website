@@ -537,9 +537,7 @@ div .profile-img{
   transition:color 650ms;
 }
 .certificate .cta:hover{
-  font-weight:bold;
-    font-size:1.5rem;
-    text-decoration:none;
+  
   color:inherit;
   font-weight: bold;
 }
