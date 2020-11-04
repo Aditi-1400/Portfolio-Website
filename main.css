@@ -4,7 +4,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-   font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
     color:white;
     
    
@@ -16,11 +16,11 @@ html{
 }
 
 body{
-    background:url("images/sitebg.jpg");
+    background:url("images/sitebgnew.jpg");
     width: 100%;
     height:100%;
     background-repeat: no-repeat;
-  
+    transform-style: preserve-3d;
     background-size: 100% 100%;
     background-attachment: fixed;
     position: relative;
@@ -627,6 +627,7 @@ div .profile-img{
     display: flex;
     animation: pulse 2s infinite;
     cursor:pointer;
+    right: 2rem;
 }
 
 .up i{
@@ -634,6 +635,7 @@ div .profile-img{
     color:#16162d;
     font-size: 2rem;
     margin:auto;
+
 }
 
 
